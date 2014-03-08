@@ -2,9 +2,15 @@
 
 @dark: #000;
 
+
+
 @light: #fff;
 
 
 body {
-    background-color: @dark;
+    background-color: lighten(@dark, 10%);
 }
+
+
+// less color function notes
+// lighten, darken, saturate, desaturate, fadein, fadeout, fade, spin, and mix.
