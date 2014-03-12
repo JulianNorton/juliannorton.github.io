@@ -7,7 +7,7 @@ juliannorton.github.io
 	<li>UX/UI designer</li>
 	<li>Mobile first</li>
 	<li>Impeccable html/css</li>
-	No more than 6 projects
+	<li>No more than 6 projects</li>
 	<li>
 		Garrett's planes
 		<ul>
