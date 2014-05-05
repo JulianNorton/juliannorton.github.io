@@ -30,7 +30,7 @@
             <color>15658734</color>
           </controlProperties>
         </control>
-        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="73" y="91" w="361" h="328" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="39"/>
+        <control controlID="1" controlTypeID="com.balsamiq.mockups::Image" x="33" y="91" w="1227" h="328" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="39"/>
         <control controlID="2" controlTypeID="com.balsamiq.mockups::SubTitle" x="618" y="23" w="-1" h="-1" measuredW="64" measuredH="35" zOrder="2" locked="false" isInGroup="39">
           <controlProperties>
             <align>center</align>
@@ -38,11 +38,9 @@
             <text>Title</text>
           </controlProperties>
         </control>
-        <control controlID="3" controlTypeID="com.balsamiq.mockups::Image" x="470" y="91" w="361" h="328" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="39"/>
-        <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="864" y="91" w="361" h="328" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="39"/>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="40" controlTypeID="com.balsamiq.mockups::Paragraph" x="685" y="285" w="525" h="80" measuredW="200" measuredH="80" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Paragraph" x="694" y="284" w="468" h="80" measuredW="200" measuredH="80" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipisicing%20elit%2C%20sed%20do%20eiusmod%20tempor%20incididunt%20ut%20labore%20et%20dolore%20magna%20aliqua.%20Ut%20enim%20ad%20minim%20veniam%2C%20quis%20nostrud%20exercitation%20ullamco%20laboris%20nisi%20ut%20aliquip%20ex%20ea%20commodo%20consequat.%20Duis%20aute%20irure%20dolor%20in%20reprehenderit%20in%20voluptate%20velit%20esse%20cillum%20dolore%20eu%20fugiat%20nulla%20pariatur.%20Excepteur%20sint%20occaecat%20cupidatat%20non%20proident%2C%20sunt%20in%20culpa%20qui%20officia%20deserunt%20mollit%20anim%20id%20est%20laborum.</text>
       </controlProperties>
@@ -66,19 +64,19 @@
         <control controlID="4" controlTypeID="com.balsamiq.mockups::Image" x="864" y="91" w="361" h="328" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="42"/>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="43" controlTypeID="com.balsamiq.mockups::Button" x="688" y="1432" w="223" h="54" measuredW="131" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Button" x="817" y="1449" w="223" h="54" measuredW="131" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Shoot%20me%20an%20email</text>
       </controlProperties>
     </control>
-    <control controlID="44" controlTypeID="com.balsamiq.mockups::Button" x="983" y="1432" w="223" h="54" measuredW="122" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Paragraph" x="375" y="826" w="352" h="39" measuredW="200" measuredH="80" zOrder="9" locked="false" isInGroup="-1"/>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Paragraph" x="771" y="826" w="352" h="39" measuredW="200" measuredH="80" zOrder="10" locked="false" isInGroup="-1"/>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Paragraph" x="1163" y="826" w="352" h="39" measuredW="200" measuredH="80" zOrder="11" locked="false" isInGroup="-1"/>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Image" x="297" y="110" w="1300" h="291" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::LinkBar" x="825" y="1534" w="-1" h="-1" measuredW="244" measuredH="19" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Something%20funny</text>
+        <text>Email%2C%20LinkedIn%2C%20Twitter%2C%20Bookmarks</text>
       </controlProperties>
     </control>
-    <control controlID="45" controlTypeID="com.balsamiq.mockups::Paragraph" x="375" y="826" w="352" h="39" measuredW="200" measuredH="80" zOrder="10" locked="false" isInGroup="-1"/>
-    <control controlID="46" controlTypeID="com.balsamiq.mockups::Paragraph" x="771" y="826" w="352" h="39" measuredW="200" measuredH="80" zOrder="11" locked="false" isInGroup="-1"/>
-    <control controlID="47" controlTypeID="com.balsamiq.mockups::Paragraph" x="1163" y="826" w="352" h="39" measuredW="200" measuredH="80" zOrder="12" locked="false" isInGroup="-1"/>
-    <control controlID="48" controlTypeID="com.balsamiq.mockups::Image" x="297" y="110" w="1300" h="291" measuredW="77" measuredH="79" zOrder="1" locked="false" isInGroup="-1"/>
   </controls>
 </mockup>
