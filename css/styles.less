@@ -10,8 +10,8 @@ body {
 	background-color: darken(@light, 4%);
 	font-family: 'Oxygen', helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-size: 14px;
-	line-height: 18px;
+	font-size: 16px;
+	line-height: 140%;
 }
 
 
@@ -41,19 +41,24 @@ section {
 header {
 	padding: @base/2;
 	height: @base * 2;
+	opacity: .5;
 }
 
 h1 {
 	color: @primary;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	float: left;
 	line-height: @base;
 }
 
 .nav-links {
 	float: right;
+
 	li {
 		display: inline-block;
+		float: left;
+		line-height: 2rem;
+		padding-left: @base;
 	}
 }
 
@@ -120,15 +125,28 @@ img {
 	text-align: center;
 }
 
+.section {
+	width: 100vw;
+	height: 90vh;
+}
+
 .hero {
+	vertical-align: middle;
+	display: table-cell;
 	text-align: center;
-	height: 5vh;
-	padding: 5vh;
-	background-color: darken(@light, 20%);
+	background-color: @blue;
+	padding-left: 10rem;
+	padding-right: 10rem;
+	color: white;
 	h2 {
-		font-size: 2.2rem;
-		// background-color: red;
-		margin-bottom: .3em;
+		font-size: 5rem;
+		font-weight: 500;
+		letter-spacing: .05em;
+		margin-bottom: .70em;
+	}
+	h3 {
+		font-size: 2rem;
+		margin-bottom: .5em;
 	}
 	p {
 		font-size: 1.2rem;
