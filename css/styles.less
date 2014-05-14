@@ -3,15 +3,16 @@
 @dark: #000;
 @light: #fff;
 @blue: #264d5e;
+@red: #a5121e;
+@blue: #264d5e;
 @base: 2rem;
-@primary: #a5121e;
+@primary: @blue;
 
 body {
 	background-color: darken(@light, 4%);
 	font-family: 'Oxygen', helvetica, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-size: 16px;
-	line-height: 140%;
 }
 
 
@@ -106,6 +107,7 @@ img {
 .secondary {
 
 }
+
 .project {
 	background-color: @blue;
 	text-align: center;
@@ -128,6 +130,7 @@ img {
 	padding-left: 10rem;
 	padding-right: 10rem;
 	color: white;
+
 	h2 {
 		font-size: 5rem;
 		font-weight: 500;
@@ -140,6 +143,24 @@ img {
 		font-size: 2rem;
 		margin-bottom: .5em;
 	}
+
+	.hero-btn {
+		padding: @base;
+		border: 1px solid red;
+		width: 40vw;
+		cursor: pointer;
+		margin:@base auto 0;
+		display: block;
+		color: white;
+		font-size: 2rem;
+		border-color: @red;
+		background-color: @red;
+		&:hover {
+			background-color: darken(@red, 8%);
+			color: white;
+		}
+	}
+
 	p {
 		font-size: 1.2rem;
 	}

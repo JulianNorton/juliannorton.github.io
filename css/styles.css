@@ -131,7 +131,6 @@ body {
   font-family: 'Oxygen', helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
-  line-height: 140%;
 }
 * {
   -webkit-box-sizing: border-box;
@@ -144,17 +143,17 @@ body {
 }
 a {
   text-decoration: none;
-  color: #a5121e;
+  color: #264d5e;
 }
 a:hover {
-  color: #770d16;
+  color: #172f3a;
 }
 header {
   padding: 1rem;
   height: 4rem;
 }
 h1 {
-  color: #a5121e;
+  color: #264d5e;
   font-size: 1.25rem;
   float: left;
   line-height: 2rem;
@@ -233,6 +232,22 @@ img {
   font-weight: 700;
   font-size: 2rem;
   margin-bottom: .5em;
+}
+.hero .hero-btn {
+  padding: 2rem;
+  border: 1px solid red;
+  width: 40vw;
+  cursor: pointer;
+  margin: 2rem auto 0;
+  display: block;
+  color: white;
+  font-size: 2rem;
+  border-color: #a5121e;
+  background-color: #a5121e;
+}
+.hero .hero-btn:hover {
+  background-color: #800e17;
+  color: white;
 }
 .hero p {
   font-size: 1.2rem;
