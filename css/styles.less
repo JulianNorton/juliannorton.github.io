@@ -39,11 +39,24 @@ header {
 	height: @base * 2;
 }
 
-h1 {
+header h1 {
 	color: @primary;
 	font-size: 1.25rem;
 	float: left;
 	line-height: @base;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+h2 {
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+
+h3 {
+	font-size: 2rem;
 }
 
 .nav-links {
@@ -68,7 +81,6 @@ img {
 	background-color: red;
 	padding-left: @base;
 	padding-right: @base;
-	height: 100px;
 	&:nth-child(2n) {
 		background-color: cyan;
 	}
@@ -114,8 +126,10 @@ img {
 }
 
 .section {
+	padding: @base;
 	width: 100vw;
-	height: 90vh;
+	height: auto;
+	text-align: center;
 	&.row {
 		max-width: 1200px;
 	}
@@ -131,8 +145,7 @@ img {
 	padding-right: 10rem;
 	color: white;
 
-	h2 {
-		font-size: 5rem;
+	h1 {
 		font-weight: 500;
 		letter-spacing: .05em;
 		margin-bottom: .70em;
@@ -140,7 +153,6 @@ img {
 	}
 	h3 {
 		font-weight: 700;
-		font-size: 2rem;
 		margin-bottom: .5em;
 	}
 
