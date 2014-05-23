@@ -229,6 +229,7 @@ img {
   padding-left: 10rem;
   padding-right: 10rem;
   color: white;
+  height: 90vh;
 }
 .hero.row {
   max-width: 1200px;
