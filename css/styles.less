@@ -103,30 +103,26 @@ img {
 .column-1 {
 	width: calc(100%/3);
 	float: left;
-	background-color: red;
-	padding-left: @base;
-	padding-right: @base;
-	&:nth-child(2n) {
-		background-color: cyan;
-	}
-	&:last-child {
-		background-color: blue;
-	} 
+	padding-left: 18px;
+	padding-right: 18px;
+	// background-color: red;
+	// &:nth-child(2n) {
+	// 	background-color: cyan;
+	// }
+	// &:last-child {
+	// 	background-color: blue;
+	// } 
 }
 
-// .column-3 {
-// 	width: calc(100%/3);
-// 	min-height: 1px;
-// 	float: left;
-// 	background-color: red;
-// 	padding-left: @base;
-// 	padding-right: @base;
-// 	height: 10rem;
-// }
+.column-2 {
+	.column-1;
+	width: calc(100% * (2/3));
+}
 
-// .column-2 {
-// 	width: calc(100%/(2/3))
-// }
+.column-3 {
+	.column-1;
+	width: 100%;
+}
 
 .wrapper {
 	margin-right: auto;
@@ -135,24 +131,10 @@ img {
 	position: relative;
 }
 
-.primary {
-	width: 600px;
-	height: 600px;
-	margin: 0 auto;
-}
-
-.secondary {
-
-}
-
-.project {
-	background-color: @blue;
-	text-align: center;
-}
-
 .section {
-	padding: @base;
+	padding: 1rem;
 	width: 100vw;
+	max-width: 100%;
 	height: auto;
 	text-align: center;
 	&.row {
@@ -208,6 +190,30 @@ img {
 	}
 	p {
 		font-size: 1.2rem;
+	}
+}
+
+
+.project {
+	float: left;
+	.project-title {
+		margin-bottom: @base / 2;
+	}
+	.primary-img {
+		.column-3;
+		margin-bottom: @base / 3;
+		img {
+			// height: 100%;
+		}
+	}
+	.secondary-img {
+		margin-bottom: @base / 3;
+	}
+	.project-context {
+		margin-bottom: @base / 2;
+	}
+	&:nth-child(even){
+		background-color: lighten(@primary, 15%);
 	}
 }
 
