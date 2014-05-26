@@ -159,21 +159,33 @@ img {
 
 	.hero-btn {
 		padding: @base;
-		border: 1px solid red;
-		width: 40vw;
+		border: 1px solid darken(@gray, 20%);
+		width: 60vw;
 		cursor: pointer;
-		margin:@base auto 0;
+		margin: 0 auto;
 		display: block;
+		clear: both;
 		color: white;
-		font-size: 2rem;
-		border-color: @red;
-		background-color: @red;
+		font-size: 3rem;
+		background-color: @primary;
 		&:hover {
-			background-color: darken(@red, 8%);
+			background-color: darken(@primary, 8%);
 			color: white;
+			.cta-symbol:before {
+				content: "☺";
+
+			}
 		}
 	}
 
+	.cta-symbol {
+		width: .6em;
+		display: inline-block;
+		&:before {
+			content: "↓";
+
+		}
+	}
 	p {
 		font-size: 1.2rem;
 	}
