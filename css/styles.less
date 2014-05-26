@@ -1,18 +1,32 @@
 @import "reset.less";
 
 @dark: #000;
+@gray: #808080;
 @light: #fff;
+
 @blue: #264d5e;
 @red: #a5121e;
-@blue: #264d5e;
+
 @base: 2rem;
-@primary: @blue;
+@primary: darken(@gray, 20%);
+
+/* ------------------------------------------------- */
+
+// Need to resize fonts dynamically…
+@media only screen and (min-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+
+/* ------------------------------------------------- */
 
 body {
 	background-color: darken(@light, 4%);
 	font-family: 'Oxygen', helvetica, sans-serif;
+	font-size: 100%;
+	line-height: 1.3;
 	-webkit-font-smoothing: antialiased;
-	font-size: 16px;
 }
 
 
@@ -20,15 +34,15 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-transition: all 0.125s ease;
-	-moz-transition:    all 0.125s ease;
-	-ms-transition:     all 0.125s ease;
-	-o-transition:      all 0.125s ease;
+	-webkit-transition: all 0.15s ease;
+	-moz-transition:    all 0.15s ease;
+	-ms-transition:     all 0.15s ease;
+	-o-transition:      all 0.15s ease;
 }
 
 a {
 	text-decoration: none;
-	color: @primary;
+	color: lighten(@primary, 15%);
 	&:hover {
 		color: darken(@primary, 10%);
 	}
@@ -37,6 +51,10 @@ a {
 header {
 	padding: @base/2;
 	height: @base * 2;
+	position: absolute;
+	background: lighten(@gray, 50%);
+	left: 0;
+	right: 0;
 }
 
 header h1 {
@@ -47,21 +65,28 @@ header h1 {
 }
 
 h1 {
-	font-size: 4rem;
+	font-size: 5rem;
 }
 
 h2 {
 	font-size: 3rem;
-	margin-bottom: 3rem;
 }
 
 h3 {
 	font-size: 2rem;
 }
 
+h4 {
+	font-size: 1.75rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
 .nav-links {
 	float: right;
-
+	display: table;
 	li {
 		display: inline-block;
 		float: left;
@@ -140,19 +165,14 @@ img {
 	vertical-align: middle;
 	display: table-cell;
 	text-align: center;
-	background-color: @blue;
-	padding-left: 10rem;
-	padding-right: 10rem;
+	background-color: lighten(@gray, 20%);
 	color: white;
 	height: 90vh;
 
 	h1 {
-		font-weight: 500;
 		letter-spacing: .05em;
-		margin-bottom: .70em;
-		font-weight: 700;	
 	}
-	h3 {
+	h2 {
 		font-weight: 700;
 		margin-bottom: .5em;
 	}
