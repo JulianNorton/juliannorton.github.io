@@ -202,21 +202,21 @@ img {
 .column-1 {
   width: calc(33.333333333333336%);
   float: left;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 .column-2 {
   width: calc(33.333333333333336%);
   float: left;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: calc(66.66666666666666%);
 }
 .column-3 {
   width: calc(33.333333333333336%);
   float: left;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
 }
 .wrapper {
@@ -295,8 +295,8 @@ img {
 .project .primary-img {
   width: calc(33.333333333333336%);
   float: left;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   width: 100%;
   margin-bottom: 0.6666666666666666rem;
 }
