@@ -24,7 +24,7 @@
 body {
 	background-color: darken(@light, 4%);
 	font-family: 'Oxygen', helvetica, sans-serif;
-	font-size: 100%;
+	font-size: 130%;
 	line-height: 1.3;
 	-webkit-font-smoothing: antialiased;
 }
@@ -55,6 +55,12 @@ header {
 	background: lighten(@gray, 50%);
 	left: 0;
 	right: 0;
+}
+
+blockquote {
+	padding-left: .5em;
+	border-left: 1px solid @gray;
+	margin-bottom: .2em;
 }
 
 header h1 {
@@ -100,6 +106,8 @@ img {
 	height: auto;
 }
 
+// 6 column grid
+
 .column-1 {
 	width: calc(100%/3);
 	float: left;
@@ -114,12 +122,17 @@ img {
 	// } 
 }
 
-.column-2 {
+.column-3 {
+	.column-1;
+	width: calc(100% * (1/2));
+}
+
+.column-4 {
 	.column-1;
 	width: calc(100% * (2/3));
 }
 
-.column-3 {
+.column-6 {
 	.column-1;
 	width: 100%;
 }
@@ -147,21 +160,38 @@ img {
 	vertical-align: middle;
 	display: table-cell;
 	text-align: center;
-	background-color: lighten(@gray, 20%);
+	background-color: desaturate(@red, 100%);
 	color: white;
-	height: 90vh;
+	height: 98vh;
 
 	h1 {
 		letter-spacing: .05em;
 	}
 	h2 {
 		font-weight: 700;
-		margin-bottom: .5em;
+		margin-bottom: @base;
 	}
+
+	.dash {
+		float: left;
+		line-height: 100%;
+	}
+
+	.quotes {
+		text-align: left;
+		margin-bottom: @base;
+	}
+
+	.byline {
+		font-size: smaller;
+		float: left;
+		margin-left: .2em;
+	}
+
 
 	.hero-btn {
 		padding: @base;
-		border: 1px solid darken(@gray, 20%);
+		border: 2px solid darken(@gray, 30%);
 		width: 60vw;
 		cursor: pointer;
 		margin: 0 auto;
@@ -171,8 +201,8 @@ img {
 		font-size: 3rem;
 		background-color: @primary;
 		&:hover {
-			background-color: darken(@primary, 8%);
-			color: white;
+			background-color: darken(@primary, 10%);
+			// color: white;
 			.cta-symbol:before {
 				content: "☺";
 
@@ -188,9 +218,6 @@ img {
 
 		}
 	}
-	p {
-		font-size: 1.2rem;
-	}
 }
 
 
@@ -200,21 +227,30 @@ img {
 		margin-bottom: @base / 2;
 	}
 	.primary-img {
-		.column-3;
+		.column-6;
 		margin-bottom: @base / 3;
 		img {
 			// height: 100%;
 		}
 	}
 	.secondary-img {
+		border: 1px solid fadeout(@gray, 50%);
 		margin-bottom: @base / 3;
 	}
 	.project-context {
 		margin-bottom: @base / 2;
 	}
 	&:nth-child(even){
-		background-color: lighten(@primary, 15%);
+		background-color: white;
 	}
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
 }
 
 .text-left {
