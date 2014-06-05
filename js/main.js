@@ -18,8 +18,6 @@ $(document).ready(function() {
 			delegate: 'a', // the selector for gallery item
 			type: 'image',
 			preload: [0,1], // read about this option in next Lazy-loading section
-			delegate: 'a', // child items selector, by clicking on it popup will open
-			type: 'image',
 			gallery: {
 				enabled:true
 			},
