@@ -155,6 +155,12 @@ table {
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
 }
+.transition {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
 /* ------------------------------------------------- */
 @media only screen and (min-width: 600px) {
   body {
@@ -177,9 +183,17 @@ body {
 a {
   text-decoration: none;
   color: #a5121e;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 a:hover {
   color: #770d16;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
 }
 header {
   padding: 1rem;
@@ -290,7 +304,7 @@ img {
   letter-spacing: .05em;
 }
 .hero h2 {
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 2rem;
 }
 .hero .dash {

@@ -12,6 +12,14 @@
 @base: 2rem;
 @primary: @red;
 
+
+.transition {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition:    all 0.2s ease;
+	-ms-transition:     all 0.2s ease;
+	-o-transition:      all 0.2s ease;
+}
+
 /* ------------------------------------------------- */
 
 // Need to resize fonts dynamically…
@@ -36,17 +44,15 @@ body {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	// -webkit-transition: all 0.15s ease;
-	// -moz-transition:    all 0.15s ease;
-	// -ms-transition:     all 0.15s ease;
-	// -o-transition:      all 0.15s ease;
 }
 
 a {
 	text-decoration: none;
 	color: @primary;
+	.transition;
 	&:hover {
 		color: darken(@primary, 10%);
+		.transition;
 	}
 }
 
@@ -170,7 +176,7 @@ img {
 		letter-spacing: .05em;
 	}
 	h2 {
-		font-weight: 700;
+		font-weight: 300;
 		margin-bottom: @base;
 	}
 
