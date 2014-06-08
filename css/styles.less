@@ -1,5 +1,6 @@
 @import "reset.less";
 @import "/magnific-popup/magnific-popup.css";
+@import "magnific-animation.less";
 
 @dark: #000;
 @gray: #808080;
@@ -9,7 +10,7 @@
 @red: #a5121e;
 
 @base: 2rem;
-@primary: darken(@gray, 20%);
+@primary: @red;
 
 /* ------------------------------------------------- */
 
@@ -43,7 +44,7 @@ body {
 
 a {
 	text-decoration: none;
-	color: lighten(@primary, 15%);
+	color: @primary;
 	&:hover {
 		color: darken(@primary, 10%);
 	}
@@ -161,8 +162,8 @@ img {
 	vertical-align: middle;
 	display: table-cell;
 	text-align: center;
-	background-color: desaturate(@red, 100%);
-	color: white;
+	// background-color: fadeout(@gray, 50%);
+	color: @primary;
 	height: 98vh;
 
 	h1 {
@@ -269,46 +270,3 @@ img {
 
 // less color function notes
 // lighten, darken, saturate, desaturate, fadein, fadeout, fade, spin, and mix.
-
-// magnific stuff below
-
-
-/* overlay at start */
-.mfp-fade.mfp-bg {
-  opacity: 0;
-  transform: scale(2);
-
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
-}
-/* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.8;
-  transform: scale(1);
-}
-/* overlay animate out */
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-  -webkit-transform: scale(2);
-}
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-  -webkit-transform: scale(2);
-
-  -webkit-transition: all 0.15s ease-out;
-  -moz-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
-}
-/* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-  -webkit-transform: scale(1);
-}
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-  -webkit-transform: scale(2);
-}
