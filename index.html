@@ -76,7 +76,12 @@
 	<h3 class="project-title"><a href="https://www.PublicStuff.com">PublicStuff.com</a></h3>
 	<!-- <div class="primary-img"><img src="/img/project-1-lg.png"></div> -->
 	<!-- <div class="primary-img"><img src="/video/video-1.mp4"></div> -->
-	<video class="primary-img" src="/video/video-1.mp4" autoplay="autoplay" loop="true"></video>
+	<video class="primary-img" autoplay="autoplay" loop="true">
+		<source src="/video/video-1.mp4" type="video/mp4">
+		<source src="/video/video-1.webm" type="video/webm">
+		<source src="/video/video-1.ogg" type="video/ogg">
+	</video>
+
 	<!-- <div class="column-1"><h5 class="text-right">Overview</h5></div> -->
 	<div class="column-6">
 		<p class="project-context">PublicStuff is a SAAS system for citizens to make real-time requests to their local governments for public services,</p>
