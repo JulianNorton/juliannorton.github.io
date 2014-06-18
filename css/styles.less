@@ -1,4 +1,5 @@
 @import "reset.less";
+@import "framework.less";
 @import "/magnific-popup/magnific-popup.css";
 @import "magnific-animation.less";
 
@@ -12,6 +13,7 @@
 @base: 2rem;
 @primary: @red;
 
+@border: 1px solid fadeout(gray, 60%);
 
 .transition {
 	-webkit-transition: all 0.15s ease;
@@ -110,54 +112,11 @@ img {
 	height: auto;
 }
 
-// 6 column grid
-
-.column-1 {
-	float: left;
-	padding-left: @base;
-	padding-right: @base;
-	width: calc(100%/3);
-}
-
-.column-3 {
-	.column-1;
-	width: calc(100% * (1/2));
-}
-
-.column-4 {
-	.column-1;
-	width: calc(100% * (2/3));
-}
-
-.column-6 {
-	.column-1;
-	width: 100%;
-}
-
-.wrapper {
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1600px;
-	position: relative;
-}
-
-.section {
-	height: auto;
-	max-width: 100%;
-	padding: 1rem;
-	text-align: center;
-	width: 100vw;
-	&.row {
-		max-width: 1200px;
-	}
-
-}
-
 .hero {
 	.section;
 	background-color: darken(@light, 4%);
-	border-bottom: 1px solid fadeout(@gray, 33%);
-	border-top: 1px solid fadeout(@gray, 33%);
+	border-bottom: @border;
+	border-top: @border;
 	color: @primary;
 	display: table-cell;
 	height: 91vh;
@@ -169,7 +128,7 @@ img {
 		a {
 			background-color: @primary;
 			border-radius: 2px;
-			border: 1px solid darken(@gray, 30%);
+			border: @border;
 			color: white;
 			display: inline-block;
 			font-size: @base;
@@ -217,51 +176,78 @@ img {
 	}
 	*/
 
-
-
-
-
-	.project {
-		float: left;
-		.project-title {
-			margin-bottom: @base / 2;
-		}
-		.primary-img {
-			.column-6;
-			margin-bottom: @base / 3;
-			max-height: 80vh;
-		}
-		.secondary-img {
-			border: 1px solid fadeout(@gray, 50%);
-			margin-bottom: @base / 3;
-		}
-		.project-context {
-			margin-bottom: @base / 2;
-		}
-		&:nth-child(even){
-			background-color: white;
-		}
+.iphone-frame {
+	background-image: url(/img/iphone-frame.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	height: 800px;
+	width: 380px;
+	video {
+		margin-left: 4px;
+		margin-top: 120px;
+		width: 320px;
 	}
+}
 
-	.pull-left {
-		float: left;
+.project {
+	float: left;
+	.project-title {
+		margin-bottom: @base / 2;
 	}
+	
+	.secondary-img {
+		border: @border;
+		margin-bottom: @base / 3;
+	}
+	.project-context {
+		margin-bottom: @base / 2;
+	}
+	&:nth-child(even){
+		background-color: white;
+	}
+}
 
-	.pull-right {
-		float: right;
-	}
+.primary-img {
+	.column-6;
+	margin-bottom: @base / 3;
+	max-height: 80vh;
+	border: @border;
+	padding: 0;
+	width: 80vw;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	float: none;
+}
 
-	.text-left {
-		text-align: left;
-	}
+.primary-video {
+	.primary-img;
+	clear: both;
+	padding: 0;
+}
 
-	.text-right {
-		text-align: right;
-	}
+.pull-left {
+	float: left;
+}
 
-	.nowrap {
-		white-space: nowrap;
-	}
+.pull-right {
+	float: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
 
 
 // less color function notes

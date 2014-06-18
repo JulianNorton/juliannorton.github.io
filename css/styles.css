@@ -127,6 +127,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.column-1 {
+  float: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: calc(33.333333333333336%);
+}
+.column-3 {
+  float: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: calc(33.333333333333336%);
+  width: calc(50%);
+}
+.column-4 {
+  float: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: calc(33.333333333333336%);
+  width: calc(66.66666666666666%);
+}
+.column-6 {
+  float: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: calc(33.333333333333336%);
+  width: 100%;
+}
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+  position: relative;
+}
+.section {
+  height: auto;
+  max-width: 100%;
+  padding: 1rem;
+  text-align: center;
+  width: 100vw;
+}
 /* overlay at start */
 .mfp-fade.mfp-bg {
   opacity: 0;
@@ -240,65 +280,19 @@ img {
   max-width: 100%;
   height: auto;
 }
-.column-1 {
-  float: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: calc(33.333333333333336%);
-}
-.column-3 {
-  float: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: calc(33.333333333333336%);
-  width: calc(50%);
-}
-.column-4 {
-  float: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: calc(33.333333333333336%);
-  width: calc(66.66666666666666%);
-}
-.column-6 {
-  float: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: calc(33.333333333333336%);
-  width: 100%;
-}
-.wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  position: relative;
-}
-.section {
-  height: auto;
-  max-width: 100%;
-  padding: 1rem;
-  text-align: center;
-  width: 100vw;
-}
-.section.row {
-  max-width: 1200px;
-}
 .hero {
   height: auto;
   max-width: 100%;
   padding: 1rem;
   width: 100vw;
   background-color: #f5f5f5;
-  border-bottom: 1px solid rgba(128, 128, 128, 0.6699999999999999);
-  border-top: 1px solid rgba(128, 128, 128, 0.6699999999999999);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+  border-top: 1px solid rgba(128, 128, 128, 0.4);
   color: #a5121e;
   display: table-cell;
   height: 91vh;
   text-align: center;
   vertical-align: middle;
-}
-.hero.row {
-  max-width: 1200px;
 }
 .hero .hero-btn {
   margin-top: 2rem;
@@ -306,7 +300,7 @@ img {
 .hero .hero-btn a {
   background-color: #a5121e;
   border-radius: 2px;
-  border: 1px solid #343434;
+  border: 1px solid rgba(128, 128, 128, 0.4);
   color: white;
   display: inline-block;
   font-size: 2rem;
@@ -348,23 +342,29 @@ img {
 		margin-left: .2em;
 	}
 	*/
+.iphone-frame {
+  background-image: url(/img/iphone-frame.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  clear: both;
+  display: block;
+  margin: 0 auto;
+  height: 800px;
+  width: 380px;
+}
+.iphone-frame video {
+  margin-left: 4px;
+  margin-top: 120px;
+  width: 320px;
+}
 .project {
   float: left;
 }
 .project .project-title {
   margin-bottom: 1rem;
 }
-.project .primary-img {
-  float: left;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  width: calc(33.333333333333336%);
-  width: 100%;
-  margin-bottom: 0.6666666666666666rem;
-  max-height: 80vh;
-}
 .project .secondary-img {
-  border: 1px solid rgba(128, 128, 128, 0.5);
+  border: 1px solid rgba(128, 128, 128, 0.4);
   margin-bottom: 0.6666666666666666rem;
 }
 .project .project-context {
@@ -372,6 +372,39 @@ img {
 }
 .project:nth-child(even) {
   background-color: white;
+}
+.primary-img {
+  float: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: calc(33.333333333333336%);
+  width: 100%;
+  margin-bottom: 0.6666666666666666rem;
+  max-height: 80vh;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  padding: 0;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+}
+.primary-video {
+  float: left;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: calc(33.333333333333336%);
+  width: 100%;
+  margin-bottom: 0.6666666666666666rem;
+  max-height: 80vh;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  float: none;
+  clear: both;
+  padding: 0;
 }
 .pull-left {
   float: left;
