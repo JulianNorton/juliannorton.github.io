@@ -1,7 +1,7 @@
 @import "reset.less";
-@import "framework.less";
 @import "/magnific-popup/magnific-popup.css";
 @import "magnific-animation.less";
+@import "framework.less";
 
 @dark: #000;
 @gray: #808080;
@@ -15,13 +15,6 @@
 
 @border: 1px solid fadeout(gray, 60%);
 
-.transition {
-	-webkit-transition: all 0.15s ease;
-	-moz-transition:    all 0.15s ease;
-	-ms-transition:     all 0.15s ease;
-	-o-transition:      all 0.15s ease;
-}
-
 /* ------------------------------------------------- */
 
 // Need to resize fonts dynamically…
@@ -32,6 +25,8 @@
 }
 
 /* ------------------------------------------------- */
+
+
 
 body {
 	background-color: darken(@light, 4%);
@@ -98,6 +93,7 @@ header {
 }
 
 .nav-links {
+	background: lighten(@gray, 50%);
 	float: right;
 	display: table;
 	li {
@@ -216,7 +212,6 @@ img {
 	max-height: 80vh;
 	border: @border;
 	padding: 0;
-	width: 80vw;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
@@ -228,6 +223,8 @@ img {
 	clear: both;
 	padding: 0;
 }
+
+// Mixins
 
 .pull-left {
 	float: left;
@@ -248,6 +245,15 @@ img {
 .nowrap {
 	white-space: nowrap;
 }
+
+.transition {
+	-webkit-transition: all 0.15s ease;
+	-moz-transition:    all 0.15s ease;
+	-ms-transition:     all 0.15s ease;
+	-o-transition:      all 0.15s ease;
+}
+
+@import "responsive.less"; // at bottom so to override
 
 
 // less color function notes
