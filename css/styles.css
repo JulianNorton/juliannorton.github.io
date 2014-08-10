@@ -387,10 +387,6 @@ img {
   float: none;
   clear: both;
   padding: 0;
-  background-repeat: no;
-  background-size: 100%;
-  background-size: no-repeat;
-  background-image: url('../img/project-1-lg-01.png');
 }
 .pull-left {
   float: left;
