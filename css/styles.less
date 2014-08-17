@@ -29,7 +29,7 @@
 
 
 body {
-	background-color: darken(@light, 4%);
+	background-color: darken(@light, 2%);
 	font-family: 'Oxygen', helvetica, sans-serif;
 	font-size: 130%;
 	line-height: 1.3;
@@ -53,6 +53,14 @@ a {
 	}
 }
 
+b {
+	font-weight: 700;
+}
+
+i {
+	font-style: italic;
+}
+
 blockquote {
 	padding-left: .5em;
 	border-left: 1px solid @gray;
@@ -60,27 +68,32 @@ blockquote {
 }
 
 h1 {
-	font-size: (@base + 4);
+	font-size: 6vw;
 	font-weight: 300;
 	letter-spacing: .05em;
 	line-height: 110%;
 	padding-bottom: 10px;
+	margin-bottom: .5em;
 }
 
 h2 {
 	font-size: (@base + 1);
+	margin-bottom: .5em;
 }
 
 h3 {
 	font-size: @base;
+	margin-bottom: .5em;
 }
 
 h4 {
 	font-size: @base * .9;
+	margin-bottom: .5em;
 }
 
 h5 {
 	font-size: @base * .75;
+	margin-bottom: .5em;
 }
 
 header {
@@ -90,6 +103,10 @@ header {
 	left: 0;
 	right: 0;
 	line-height: @base;
+}
+
+small {
+	font-size: .7em;
 }
 
 .nav-links {
@@ -221,6 +238,7 @@ img {
 	margin-right: auto;
 	display: block;
 	float: none;
+	text-align: center;
 }
 
 .primary-video {
