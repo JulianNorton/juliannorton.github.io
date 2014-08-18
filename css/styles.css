@@ -244,19 +244,24 @@ h1 {
 }
 h2 {
   font-size: 3rem;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 h3 {
   font-size: 2rem;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 h4 {
   font-size: 1.8rem;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
 }
 h5 {
   font-size: 1.5rem;
-  margin-bottom: .5em;
+  margin-bottom: .25em;
+}
+hr {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  clear: both;
 }
 header {
   padding: 1rem;
@@ -265,6 +270,12 @@ header {
   left: 0;
   right: 0;
   line-height: 2rem;
+}
+ol {
+  list-style-type: decimal;
+}
+ol li {
+  margin-bottom: .5em;
 }
 small {
   font-size: .7em;
