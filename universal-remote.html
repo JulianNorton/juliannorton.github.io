@@ -33,11 +33,25 @@
 			Now people can do everything from adjust their home's temperature, to summoning a black car for transport. People are becoming more comfortable using a single mobile devices to control the world around them. TV remotes are archaic, overcomplicated, and a TV control app would put less between them and their content.
 		</p>
 
-		<h2>Survey the prospective audience</h2>
-		<h3>I had 30 people, through mechanical turk, take a <a href="https://juliannorton.typeform.com/to/ifZ8SX">Typeform survey</a>.</h3>
+		<h2>A Survey of the prospective audience</h2>
 		<img src="/img/survey-form.gif">
+		<h5>Through a <a href="https://juliannorton.typeform.com/to/ifZ8SX">Typeform survey</a> and mechanical turk, I found what was frustrating people</h5>
 		<small><a href="https://juliannorton.typeform.com/to/ifZ8SX">View the results</a></small>
-		<h4>People generally talked about four different things</h4>
+		<h3>The good</h3>
+		<ul>
+			<li style="margin-bottom: 1em;"><blockquote>I like that the remote has glow-in-the-dark buttons, which makes it easy to see in the dark. I also like the shape of it. It feels very good in my hand.</blockquote></li>
+			<li style="margin-bottom: 1em;"><blockquote>The remote controls all of the devices off one remote. Pressing the power button turns off the TV and the cable box together.</blockquote></li>
+			<li style="margin-bottom: 1em;"><blockquote>On/Off buttons, changing displays, controlling volumes…</blockquote></li>
+		</ul>
+		<h3>The bad</h3>
+		<ul>
+			<li style="margin-bottom: 1em;"><blockquote>The fact that I need two remotes to properly control my devices</blockquote></li>
+			<li style="margin-bottom: 1em;"><blockquote>There are too many buttons that I never use, which get in the way sometimes.<br>It took a while for me to remember where some of my go-to buttons were.</blockquote></li>
+			<li style="margin-bottom: 1em;"><blockquote>There are a lot of buttons that I never use. I don't know what they do. I would like bigger buttons.</blockquote></li>
+			<li style="margin-bottom: 1em;"><blockquote>My universal remote doesn't work with the blu ray player</blockquote></li>
+			<li style="margin-bottom: 1em;"><blockquote>They get lost and drink batteries</blockquote></li>
+		</ul>
+		
 
 		<ul>
 			<!-- <li>TALK ABOUT HOW RESEARCH AFFECTED THE APP</li>
@@ -47,6 +61,7 @@
 			<li>30% of people used at least two remotes</li>
 			<!-- <small><i>This was my screener question</i></small> -->
 		</ul>
+		<p>From the survey, I knew I had to address the initial set up and inutitive, relevant, interface.</p>
 		<img src="/img/post-it-collection.gif">
 
 		<hr>
@@ -54,11 +69,89 @@
 		<!-- Rewrite from scratch -->
 		<!-- video of mental model -->
 		<!-- conceptual model of how people think about things -->
-		<h4>For somenoe who has a TV and smartphone, who doesn’t want to deal with multiple TV remotes. A single, universal app that can control all of the devices my TV works with.</h4>
+		<p style="font-size: 110%;">He has separate remotes for his stereo, cablebox, and TV. He is frustrated because he doesn't like finding, and switching between all the remotes. He is tired of replacing all of the batteries. He has downloaded a universal remote control app, to help him get past all of the annoyance of the traditional remotes</p>
+		<!-- <p>Ricky is home after work and has some time to watch TV before eating dinner</p>
+		<p>He has separate remotes for his stereo, cablebox, and TV.</p>
+		<p>He is frustrated because he doesn't like finding, and switching between all the remotes.</p>
+		<p>He is tired of replacing all of the batteries</p>
+		<p>He has downloaded a universal remote control app, to help him get past all of the annoyance of the traditional remotes</p> -->
+		<!-- <h4>For somenoe who has a TV and smartphone, who doesn’t want to deal with multiple TV remotes. A single, universal app that can control all of the devices my TV works with.</h4> -->
 
 		<hr>
 		<h2>Competitors</h2>
-		<div class="column-1">
+		<i>Reviews from the app store helped inform this</i>
+		<div style="clear: both; margin-bottom: 3rem; float: left;">
+			<h4><a href="http://peel.com/">Peel</a></h4>
+			<p style="display: block; margin-bottom: 1em;"><i>Experience personalized TV, with recommendations just for you!</i></p>
+			<img style="float: left; max-height: 40vh;" src="/img/peel-remote.jpg">
+			<div style="float: left; margin-left: 2em;">
+				<h3>Pros</h3>
+				<ol>
+					<li>TV guide of upcoming shows</li>
+					<li>Personalized TV recommendations</li>
+					<li>Controls both TV and cablebox</li>
+					
+				</ol>
+				<h3>Cons</h3>
+				<ol>
+					<li>No volume control for a separate stereo box</li>
+					<li>No DVD control, only TV and cablebox.</li>
+					<li>No mute button</li>
+				</ol>
+			</div>
+		</div>
+		<div style="clear: both; margin-bottom: 3rem; float: left;">
+			<h4><a href="www.roomieremote.com">Roomie</a></h4>
+			<p style="display: block; margin-bottom: 1em;"><i>Control your home theater components supporting thousands of devices</i></p>
+			<img style="float: left; max-height: 40vh;" src="/img/roomie-remote.jpg">
+			<div style="float: left; margin-left: 2em;">
+				<h3>Pros</h3>
+				<ol>
+					<li>Optomizes UI based on synced remote</li>
+					<li>Cable, satellite, and antenna television listings</li>
+					<li>Macros for complex command timing for automation</li>
+					
+				</ol>
+				<h3>Cons</h3>
+				<ol>
+					<li>Frustrating first time UX, lack of documentation</li>
+					<li>Requires monthly subscription for infrared devices</li>
+					<li>Each additional control of a remote is $25</li>	
+				</ol>
+			</div>
+		</div>
+		<div style="clear: both; margin-bottom: 3rem; float: left;">
+			<h4><a href="http://www.logitech.com/en-us/universal-remotes">Logitech</a></h4>
+			<p style="display: block; margin-bottom: 1em;"><i>The world’s largest remote control compatibility databases with over 225,000 home theater devices.</i></p>
+			<img style="float: left; max-height: 40vh;" src="/img/harmony-remote.jpg">
+			<div style="float: left; margin-left: 2em;">
+				<h3>Pros</h3>
+				<ol>
+					<li>Lots of device compaitbility, including Roku, projectors, or a PS4</li>
+					<li>Easy set up</li>
+					<li>Gestures actions for power users</li>
+				</ol>
+				<h3>Cons</h3>
+				<ol>
+					<li>Requires it to be paired with a Harmony Ultimate, or Harmony Smart Control</li>
+					<li>Customizing activities is limited on the app as opposed to the MyHarmony site</li>
+					<li>Segmented controls between use cases</li>
+					<li>Requires internet connection to work</li>
+				</ol>
+			</div>
+		</div>
+		<!-- <div class="">
+			<h5><a href="#">Peel</a></h5>
+			<img src="/img/peel-remote.jpg">
+			<h5><i>Experience personalized TV, with recommendations just for you!</i></h5>
+		</div> -->
+		<!-- <div class="">
+			<h5><a href="http://www.logitech.com/en-us/universal-remotes">Logitech</a></h5>
+			<img src="/img/harmony-remote.jpg">
+			<small><i>The world’s largest remote control compatibility databases with over 225,000 home theater devices.</i></small>
+		</div> -->
+		<!-- Pros and cons of each competitor -->
+		<!-- <div class="column-1">
 			<h5><a href="www.roomieremote.com">Roomie</a></h5>
 			<img src="/img/roomie-remote.jpg">
 			<small><i>Control your home theater components supporting thousands of devices</i></small>
@@ -72,8 +165,9 @@
 			<h5><a href="http://www.logitech.com/en-us/universal-remotes">Logitech</a></h5>
 			<img src="/img/harmony-remote.jpg">
 			<small><i>The world’s largest remote control compatibility databases with over 225,000 home theater devices.</i></small>
-			<!-- Pros and cons of each competitor -->
-		</div>
+		</div> -->
+		<!-- Pros and cons of each competitor -->
+		<!-- <h3>Testing one two three</h3> -->
 		<hr>
 		<h2>Google ad words</h2>
 		<img src="img/google-adwords-remote.png">
@@ -88,9 +182,9 @@
 		<h2>Use cases</h2>
 		<!-- Use cases of the device, less of the set up of the device, more of actual using it. -->
 		<ol>
-		<li>Bought a TV and cable subscriptions and setting up for the first time</li>
-		<li>Integrating existing multiple remotes into a single app</li>
-		<li>I want to turn on my tv, switch to dvd, and play a movie, and control the audio from one app</li>
+			<li>Bought a TV and cable subscriptions and setting up for the first time</li>
+			<li>Integrating existing multiple remotes into a single app</li>
+			<li>I want to turn on my tv, switch to dvd, and play a movie, and control the audio from one app</li>
 		</ol>
 
 		<hr>

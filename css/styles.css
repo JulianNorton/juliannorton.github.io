@@ -276,6 +276,7 @@ ol {
 }
 ol li {
   margin-bottom: .5em;
+  margin-left: 2.5em;
 }
 small {
   font-size: .7em;
