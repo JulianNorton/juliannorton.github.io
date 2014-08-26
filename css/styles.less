@@ -76,34 +76,42 @@ blockquote {
 	margin-bottom: .2em;
 }
 
+@scale-factor: 1.3;
+
 h1 {
-	font-size: (@base * 1.6);
-	font-size: 7vw;
+	// font-size: round((@scale-factor * 10rem), 1);
+	font-size: 5rem * @scale-factor;
 	font-weight: 300;
 	letter-spacing: .05em;
 	line-height: 110%;
-	padding-bottom: 10px;
-	margin-bottom: .5em;
 }
 
 h2 {
-	font-size: (@base * 1.25);
-	margin-bottom: .33em;
+	// font-size: round((@scale-factor * 8rem), 1);
+	font-size: 4rem * @scale-factor;
+	margin-bottom: .2em;
 }
 
 h3 {
-	font-size: @base;
-	margin-bottom: .33em;
+	// font-size: round((@scale-factor * 5rem), 1);
+	font-size: 3rem * @scale-factor;
+	margin-bottom: .2em;
 }
 
 h4 {
-	font-size: @base * .9;
-	margin-bottom: .33em;
+	font-size: 2rem * @scale-factor;
+	margin-bottom: .2em;
 }
 
 h5 {
-	font-size: @base * .75;
-	margin-bottom: .33em;
+	font-size: 1rem * @scale-factor;
+	margin-bottom: .2em;
+}
+
+h6 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-bottom: .2em;
 }
 
 hr {
@@ -256,7 +264,6 @@ img {
 	.column-6;
 	margin-bottom: @base / 3;
 	max-height: 80vh;
-	border: @border;
 	padding: 0;
 	margin-left: auto;
 	margin-right: auto;

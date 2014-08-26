@@ -243,29 +243,31 @@ blockquote:before {
   left: .5em;
 }
 h1 {
-  font-size: 3.2rem;
-  font-size: 7vw;
+  font-size: 6.5rem;
   font-weight: 300;
   letter-spacing: .05em;
   line-height: 110%;
-  padding-bottom: 10px;
-  margin-bottom: .5em;
 }
 h2 {
-  font-size: 2.5rem;
-  margin-bottom: .33em;
+  font-size: 5.2rem;
+  margin-bottom: .2em;
 }
 h3 {
-  font-size: 2rem;
-  margin-bottom: .33em;
+  font-size: 3.9rem;
+  margin-bottom: .2em;
 }
 h4 {
-  font-size: 1.8rem;
-  margin-bottom: .33em;
+  font-size: 2.6rem;
+  margin-bottom: .2em;
 }
 h5 {
-  font-size: 1.5rem;
-  margin-bottom: .33em;
+  font-size: 1.3rem;
+  margin-bottom: .2em;
+}
+h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: .2em;
 }
 hr {
   margin-top: 4vh;
@@ -405,7 +407,6 @@ img {
   width: 100%;
   margin-bottom: 0.66666667rem;
   max-height: 80vh;
-  border: 1px solid rgba(128, 128, 128, 0.4);
   padding: 0;
   margin-left: auto;
   margin-right: auto;
@@ -417,7 +418,6 @@ img {
   width: 100%;
   margin-bottom: 0.66666667rem;
   max-height: 80vh;
-  border: 1px solid rgba(128, 128, 128, 0.4);
   margin-left: auto;
   margin-right: auto;
   display: block;
