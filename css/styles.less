@@ -62,13 +62,23 @@ i {
 }
 
 blockquote {
+	&:before {
+		content: "“";
+		font-family: 'georgia', 'times', san-serif;
+		font-size: 4em;
+		position: absolute;
+		vertical-align: middle;
+		left: .5em;
+	}
+
 	padding-left: .5em;
 	border-left: 1px solid @gray;
 	margin-bottom: .2em;
 }
 
 h1 {
-	font-size: 6vw;
+	font-size: (@base * 1.6);
+	font-size: 7vw;
 	font-weight: 300;
 	letter-spacing: .05em;
 	line-height: 110%;
@@ -77,23 +87,23 @@ h1 {
 }
 
 h2 {
-	font-size: (@base + 1);
-	margin-bottom: .25em;
+	font-size: (@base * 1.25);
+	margin-bottom: .33em;
 }
 
 h3 {
 	font-size: @base;
-	margin-bottom: .25em;
+	margin-bottom: .33em;
 }
 
 h4 {
 	font-size: @base * .9;
-	margin-bottom: .25em;
+	margin-bottom: .33em;
 }
 
 h5 {
 	font-size: @base * .75;
-	margin-bottom: .25em;
+	margin-bottom: .33em;
 }
 
 hr {
