@@ -68,11 +68,12 @@ blockquote {
 		font-size: 4em;
 		position: absolute;
 		vertical-align: middle;
-		left: .5em;
+		left: 0;
+		margin-top: -.17em
 	}
 
-	padding-left: .5em;
-	border-left: 1px solid @gray;
+	padding-left: 2em;
+	// border-left: 1px solid @gray;
 	margin-bottom: .2em;
 }
 
@@ -84,28 +85,29 @@ h1 {
 	font-weight: 300;
 	letter-spacing: .05em;
 	line-height: 110%;
+	margin-bottom: .3em;
 }
 
 h2 {
 	// font-size: round((@scale-factor * 8rem), 1);
-	font-size: 4rem * @scale-factor;
+	font-size: 3rem * @scale-factor;
 	margin-bottom: .2em;
 }
 
 h3 {
 	// font-size: round((@scale-factor * 5rem), 1);
-	font-size: 3rem * @scale-factor;
+	font-size: 2.5rem * @scale-factor;
 	margin-bottom: .2em;
 }
 
 h4 {
 	font-size: 2rem * @scale-factor;
-	margin-bottom: .2em;
+	margin-bottom: .4em;
 }
 
 h5 {
 	font-size: 1rem * @scale-factor;
-	margin-bottom: .2em;
+	margin-bottom: .7em;
 }
 
 h6 {
@@ -133,7 +135,8 @@ ol {
 	list-style-type: decimal;
 	li {
 		margin-bottom: .5em;
-		margin-left: 2.5em;
+		margin-left: 2em;
+		font-size: 1.2rem;
 	}
 }
 
