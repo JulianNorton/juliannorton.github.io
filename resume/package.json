@@ -1,0 +1,14 @@
+{
+  "name": "jsonresume-theme-julian-norton",
+  "version": "0.1.2",
+  "description": "Julian Norton's theme for JSON Resume",
+  "author": "Julian Norton",
+  "repository": {
+    // "type": "git",
+    // "url": "https://github.com/"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4"
+  }
+}
