@@ -1,3 +1,8 @@
+<?php
+$outfile = dirname($_SERVER['DOCUMENT_ROOT']) . "/data/github.dat";
+?><!DOCTYPE html>
+<html>
+<head>
 </head>
 <body>
 <?php
