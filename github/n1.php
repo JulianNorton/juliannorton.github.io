@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $deployment->environment === 'produ
     array(
       '_TIMESTAMP' => date('c'),
       '_DEPLOYMENT' => $deployment,
-      '_GET_COMMAND' => $git_cmd,
+      '_GIT_COMMAND' => $git_cmd,
       '_GIT_OUTPUT' => $git_output,
       '_GIT_STATUS' => $git_status,
     ),
