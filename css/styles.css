@@ -227,9 +227,6 @@ b {
 i {
   font-style: italic;
 }
-p {
-  margin-bottom: .5em;
-}
 blockquote {
   padding-left: 2em;
   margin-bottom: .2em;
@@ -398,6 +395,9 @@ img {
   }
   .logo {
     display: none;
+  }
+  p {
+    margin-bottom: .5em;
   }
   header {
     padding-bottom: 0;
