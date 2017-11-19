@@ -11,63 +11,45 @@
   <!-- https://www.google.com/webmasters/tools/dashboard -->
   <meta name="google-site-verification" content="ovsm_3PHgFQCDNzOV1NmXM0B9C2hefwgxa4-bSDxdKo" />
 
-  <!-- This is non-critical css, it doesn't block loading -->
-  <link rel="preload" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css" as="style" onload="this.rel='tachyons.min.css'">
-  <!-- Apply stylesheet with javascript once loading is finished -->
-  <script type="text/javascript">
-  //<![CDATA[
-  if(document.createStyleSheet) {
-    document.createStyleSheet("https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css");
-  }
-  else {
-    var styles = "@import url('https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css');";
-    var newSS=document.createElement('link');
-    newSS.rel='stylesheet';
-    newSS.href='data:text/css,'+escape(styles);
-    document.getElementsByTagName("head")[0].appendChild(newSS);
-  }
-  //]]>
-</script>
-<!-- If javascript isn't enabled, load directly as a fallback -->
-<noscript><link rel="stylesheet" href="https://unpkg.com/tachyons@4.8.0/css/tachyons.min.css"></noscript>
+<link rel="preload" href="https://unpkg.com/tachyons@4.8.1/css/tachyons.min.css" as="style>
 
 </head>
-<body class="sans-serif bg-washed-blue navy">
+<body class="sans-serif bg-washed-green navy">
   <header class="measure-wide px5-l mw5 mw7-ns center ph2 ph5-ns tc tl-ns">
-    <h1 class="f5 dib mb0"><a class="pa1 link dark-pink hover-bg-lightest-blue" href="/">Julian Norton</a></h1>
+    <h1 class="f5 dib mb0"><a class="pv2 pr2 link dark-green hover-bg-lightest-green" href="/">Julian Norton</a></h1>
     <nav class="dib">
       <ul class="pa0">
         <li class="f5 dib mr2 mr3-ns">
-          <a class="pv2 ph1 link dib underline dark-pink hover-bg-lightest-blue" rel="noopener noreferrer" href="https://www.Linkedin.com/in/juliannorton/" target="_blank" title="Link opens in a new window">LinkedIn</a>
+          <a class="pv2 ph1 link dib underline dark-green hover-bg-lightest-green" rel="noopener noreferrer" href="https://www.Linkedin.com/in/juliannorton/" target="_blank" title="Link opens in a new window">LinkedIn</a>
         </li>
         <li class="f5 dib mr2 mr3-ns">
-          <a class="pv2 ph1 link dib underline dark-pink hover-bg-lightest-blue" rel="noopener noreferrer" href="https://Twitter.com/JulianNorton" target="_blank" title="Link opens in a new window">Twitter</a>
+          <a class="pv2 ph1 link dib underline dark-green hover-bg-lightest-green" rel="noopener noreferrer" href="https://Twitter.com/JulianNorton" target="_blank" title="Link opens in a new window">Twitter</a>
         </li>
         <li class="f5 dib mr2 mr3-ns">
-          <a class="pv2 ph1 link dib underline dark-pink hover-bg-lightest-blue" rel="noopener noreferrer" href="https://www.Github.com/JulianNorton" target="_blank" title="Link opens in a new window">Github</a>
+          <a class="pv2 ph1 link dib underline dark-green hover-bg-lightest-green" rel="noopener noreferrer" href="https://www.Github.com/JulianNorton" target="_blank" title="Link opens in a new window">Github</a>
         </li>
         <li class="f5 dib mr2 mr3-ns">
-          <a class="pv2 ph1 link dib underline dark-pink hover-bg-lightest-blue" title="Julian+@JulianNorton.com" rel="noopener noreferrer" href="mailto:Julian+personalwebsite@JulianNorton.com?Subject=Hello"> Email</a>
+          <a class="pv2 ph1 link dib underline dark-green hover-bg-lightest-green" title="Julian+@JulianNorton.com" rel="noopener noreferrer" href="mailto:Julian+personalwebsite@JulianNorton.com?Subject=Hello"> Email</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="measure-wide ph5-l mb2 mw5 mw7-ns center ph2 ph5-ns">
     <section>
-      <h2 class="lh-title mv0 f3 f2-ns">Head of User Experience <span class="dib">at <a class="link dark-pink hover-bg-lightest-blue" target="_blank" title="Link opens in a new window" rel="noopener noreferrer" href="http://www.agolo.com">Agolo</span></a></h2>
+      <h2 class="lh-title mv0 f3 f2-ns">Head of User Experience <span class="dib">at <a class="link dark-green hover-bg-lightest-green" target="_blank" title="Link opens in a new window" rel="noopener noreferrer" href="http://www.agolo.com">Agolo</span></a></h2>
       <h3 class="f5 f4-ns">Julian designs software to be more useful, usable, and valuable.</h3>
-      <p class="lh-copy">Julian works at <a class="link dark-pink hover-bg-lightest-blue" target="_blank" title="Link opens in a new window" rel="noopener noreferrer" href="http://www.agolo.com">Agolo</a> in Manhattan and has been designing in tech startups for over five years.</p>
+      <p class="lh-copy">Julian works at <a class="link dark-green hover-bg-lightest-green" target="_blank" title="Link opens in a new window" rel="noopener noreferrer" href="http://www.agolo.com">Agolo</a> in Manhattan and has been designing in tech startups for over five years.</p>
     </section>
     <section class="bt">
       <h3 class="f4 f3-ns mb3">Recent projects</h3>
       <dl class="mt0">
         <dt class="f5 f4-ns b mb2">
-          <a class="link dark-pink hover-bg-lightest-blue" rel="noopener noreferrer" href="https://www.agolo.com" target="_blank" title="Link opens in a new window">agolo.com</a>
+          <a class="link dark-green hover-bg-lightest-green" rel="noopener noreferrer" href="https://www.agolo.com" target="_blank" title="Link opens in a new window">agolo.com</a>
         </dt>
         <dd class="lh-copy ma0">Agolo uses machine learning to create summaries from text in real-time.</dd>
       </dl>
       <dl>
-        <dt class="f5 f4-ns b mb2"><a class="link dark-pink hover-bg-lightest-blue" rel="noopener noreferrer" href="http://wxkb.io" target="_blank" title="Link opens in a new window">weather-10kb</a></dt>
+        <dt class="f5 f4-ns b mb2"><a class="link dark-green hover-bg-lightest-green" rel="noopener noreferrer" href="http://wxkb.io" target="_blank" title="Link opens in a new window">weather-10kb</a></dt>
         <dd class="lh-copy ma0">Weather-10kb (wxkb.io) delivers the forecast. It's high performance, open-source, collaborative, and accessible.</dd>
       </dl>
    </section>
@@ -78,7 +60,7 @@
        <label class="mb2 dib" for="tlemail">Enter your email address</label>
        <input class="f5-l input-reset ba-1 fl black-80 bg-white pa3 lh-solid w-100 w-75-m w-80-l br2-ns br--left-ns" type="text" name="email" id="tlemail" placeholder="your email" />
        <input type="hidden" value="1" name="embed"/>
-       <input class="f5-l button-reset fl pv3 tc ba-1 mt2 mt0-ns bg-animate dark-pink hover-bg-lightest-blue bg-white pointer w-100 w-25-m w-20-l br2-ns br--right-ns" style="cursor: pointer;" type="submit" value="Subscribe" />
+       <input class="f5-l button-reset fl pv3 tc ba-1 mt2 mt0-ns bg-animate dark-green hover-bg-lightest-green bg-white pointer w-100 w-25-m w-20-l br2-ns br--right-ns" style="cursor: pointer;" type="submit" value="Subscribe" />
      </form>
    </aside>
  </main>
