@@ -1,0 +1,26 @@
+# Julian Norton
+
+> Julian Norton is a product leader in New York City specializing in AI and LLM systems, with a focus on protecting products from bots, fraud, and AI-agent abuse. He is a Staff Product Manager at HUMAN Security, and former co-founder and CEO of Plum AI (acquired in 2025), an LLM evaluation platform.
+
+Expertise: AI product management, LLM evaluation and quality, bot detection and mitigation, fraud and abuse prevention, AI-agent security, cybersecurity.
+
+## Current roles
+
+- [HUMAN Security](https://www.humansecurity.com/): Staff Product Manager. Protection across human, bot, and AI agent interactions.
+
+## Previous roles
+
+- [Plum AI (Plum Defense Inc.)](https://getplum.ai/): Co-founder and CEO. Evaluates and automatically improves the quality of LLM applications.
+- [SecurityScorecard](https://www.securityscorecard.com/): Senior Product Manager. Security ratings and supply-chain risk intelligence.
+- [Order.co](https://www.order.co/): Sr. Product Manager. Purchasing and spend management for businesses.
+- [Implicit (formerly Agolo)](https://www.agolo.com/): Product Manager. NLP platform that turns unstructured documents into structured knowledge.
+
+## Profiles
+
+- [LinkedIn](https://www.linkedin.com/in/juliannorton/)
+- [GitHub](https://github.com/JulianNorton)
+- [Bluesky](https://bsky.app/profile/juliannorton.bsky.social)
+
+## Contact
+
+- Email: Julian+Norton@Julian.nyc
